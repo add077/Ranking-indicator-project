@@ -11,6 +11,7 @@ import pandas as pd
 
 
 LOGGER = logging.getLogger(__name__)
+_OPTIONAL_WARNING_CACHE: set[str] = set()
 
 REQUIRED_OHLC_COLUMNS: Tuple[str, ...] = ("open", "high", "low", "close")
 OPTIONAL_COLUMNS: Tuple[str, ...] = ("volume", "vix")
@@ -410,7 +411,17 @@ def _format_token(value: Any) -> str:
     return str(value).replace(".", "p").replace("-", "neg")
 
 
-def _warn_optional(message: str) -> None:
+def _warn_optional(message: str, *, once: bool = True) -> None:
+    """
+    Emet un warning optionnel, avec deduplication par defaut.
+
+    Cela evite d'inonder le notebook lorsque la meme absence de colonne
+    optionnelle est rencontree pour de nombreux actifs ou sous-panels.
+    """
+    if once:
+        if message in _OPTIONAL_WARNING_CACHE:
+            return
+        _OPTIONAL_WARNING_CACHE.add(message)
     LOGGER.warning(message)
 
 

@@ -2,12 +2,14 @@ from __future__ import annotations
 
 from collections.abc import Mapping as ABCMapping
 import logging
+import warnings
 from copy import deepcopy
 from dataclasses import dataclass
 from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
+from pandas.errors import PerformanceWarning
 
 
 LOGGER = logging.getLogger(__name__)
@@ -793,13 +795,15 @@ def add_binary_signal_target(
         suffix = _extract_horizon_suffix_from_return_col(return_col)
         target_col = f"{feature}__target_{suffix}"
 
-    result[target_col] = _compute_binary_target(
-        result[signal_direction_col],
-        result[return_col],
-        signal_active=signal_active,
-        tau=tau,
-        inactive_policy=inactive_policy,
-    )
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", PerformanceWarning)
+        result[target_col] = _compute_binary_target(
+            result[signal_direction_col],
+            result[return_col],
+            signal_active=signal_active,
+            tau=tau,
+            inactive_policy=inactive_policy,
+        )
     return result
 
 
