@@ -1,0 +1,72 @@
+indicator_name;signal_family;natural_direction
+Acceleration Bands;band_channel_level;bidirectional
+Bollinger Bands;band_channel_level;bidirectional
+Donchian Channel;band_channel_level;bidirectional
+Keltner Channel;band_channel_level;bidirectional
+Absolute Price Oscillator;centered_oscillator;bidirectional
+Accumulation/Distribution Oscillator;centered_oscillator;bidirectional
+Awesome Oscillator;centered_oscillator;bidirectional
+Balance of Power;centered_oscillator;bidirectional
+Bias Indicator;centered_oscillator;bidirectional
+Chande Forecast Oscillator;centered_oscillator;bidirectional
+Chande Momentum Oscillator;centered_oscillator;bidirectional
+Coppock Curve;centered_oscillator;bidirectional
+Detrended Price Oscillator;centered_oscillator;bidirectional
+Ease of Movement (EOM);centered_oscillator;bidirectional
+Elder's Force Index;centered_oscillator;bidirectional
+Know Sure Thing (KST);centered_oscillator;bidirectional
+MACD (Moving Average Convergence Divergence);centered_oscillator;bidirectional
+Momentum Indicator;centered_oscillator;bidirectional
+Percentage Price Oscillator (PPO);centered_oscillator;bidirectional
+Percentage Volume Oscillator (PVO);centered_oscillator;bidirectional
+Qstick Indicator;centered_oscillator;bidirectional
+Rate of Change (ROC);centered_oscillator;bidirectional
+Relative Vigor Index (RVI);centered_oscillator;bidirectional
+ADX (Average Directional Index);context_filter;contextual / non-directional
+ATR (Average True Range);context_filter;contextual / non-directional
+Average True Range (ATR);context_filter;contextual / non-directional
+Choppiness Index;context_filter;contextual / non-directional
+Entropy Indicator;context_filter;contextual / non-directional
+High-Low-Close Average;context_filter;bidirectional
+Kurtosis;context_filter;contextual / non-directional
+Mass Index;context_filter;contextual / non-directional
+Mean Absolute Deviation;context_filter;contextual / non-directional
+Median Price;context_filter;contextual / non-directional
+Midpoint Indicator;context_filter;contextual / non-directional
+Midprice Indicator;context_filter;contextual / non-directional
+Normalized ATR;context_filter;contextual / non-directional
+Open-High-Low-Close Average;context_filter;contextual / non-directional
+Price Distance;context_filter;contextual / non-directional
+Quantile Indicator;context_filter;contextual / non-directional
+VIX (Volatility Index);context_filter;contextual / non-directional
+Center of Gravity;extreme_zone_oscillator;bidirectional
+Commodity Channel Index (CCI);extreme_zone_oscillator;bidirectional
+Emotion Index & Willingness Index;extreme_zone_oscillator;bidirectional
+Money Flow Index (MFI);extreme_zone_oscillator;bidirectional
+Pretty Good Oscillator;extreme_zone_oscillator;bidirectional
+RSI (Relative Strength Index);extreme_zone_oscillator;bidirectional
+Relative Strength Xtra (RSX);extreme_zone_oscillator;bidirectional
+Stochastic Oscillator;extreme_zone_oscillator;bidirectional
+Arnaud Legoux Moving Average (ALMA);trend_filter;bidirectional
+Aroon Indicator;trend_filter;bidirectional
+Correlation Trend Indicator;trend_filter;bidirectional
+Efficiency Ratio;trend_filter;bidirectional
+Ehlers Super Smoother Filter;trend_filter;bidirectional
+Even Better Sinewave;trend_filter;bidirectional
+Fibonacci Weighted Moving Average;trend_filter;bidirectional
+Ichimoku Cloud;trend_filter;bidirectional
+Ichimoku Kinko Hyo;trend_filter;bidirectional
+Inertia Indicator;trend_filter;bidirectional
+Kaufman Adaptive Moving Average;trend_filter;bidirectional
+Linear Decay;trend_filter;bidirectional
+Linear Regression;trend_filter;bidirectional
+Moving Averages (SMA/EMA);trend_filter;bidirectional
+Parabolic SAR;trend_filter;bidirectional
+Accumulation/Distribution Line;volume_confirmation;bidirectional
+Chaikin Money Flow (CMF);volume_confirmation;bidirectional
+Elder Ray Index;volume_confirmation;bidirectional
+Negative Volume Index (NVI);volume_confirmation;bidirectional
+On-Balance Volume (OBV);volume_confirmation;bidirectional
+Positive Volume Index (PVI);volume_confirmation;bidirectional
+Price Volume Rank;volume_confirmation;bidirectional
+Price Volume Trend (PVT);volume_confirmation;bidirectional
